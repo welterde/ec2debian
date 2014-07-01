@@ -30,7 +30,7 @@ linux_entry ()
 
   cat << EOF
 title ${version}
-  root (hd0)
+  root (hd0,0)
   kernel ${rel_dirname}/${basename} root=${GRUB_DEVICE} ro ${args}
   initrd ${rel_dirname}/${initrd}
 EOF
